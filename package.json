@@ -1,0 +1,26 @@
+{
+  "name": "bbc-microbit-io",
+  "version": "0.0.0",
+  "description": "Johnny-Five IO Plugin for the BBC micro:bit",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sandeepmistry/node-bbc-microbit-io.git"
+  },
+  "keywords": [
+    "bbc",
+    "microbit",
+    "micro:bit",
+    "johnny-five",
+    "IO"
+  ],
+  "author": "Sandeep Misty <sandeep.mistry@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sandeepmistry/node-bbc-microbit-io/issues"
+  },
+  "homepage": "https://github.com/sandeepmistry/node-bbc-microbit-io"
+}
