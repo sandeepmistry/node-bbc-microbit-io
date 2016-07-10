@@ -22,5 +22,13 @@
   "bugs": {
     "url": "https://github.com/sandeepmistry/node-bbc-microbit-io/issues"
   },
-  "homepage": "https://github.com/sandeepmistry/node-bbc-microbit-io"
+  "homepage": "https://github.com/sandeepmistry/node-bbc-microbit-io",
+  "dependencies": {
+    "bbc-microbit": "^0.1.0",
+    "board-io": "^3.0.5",
+    "debug": "^2.2.0"
+  },
+  "devDependencies": {
+    "johnny-five": "^0.9.59"
+  }
 }
