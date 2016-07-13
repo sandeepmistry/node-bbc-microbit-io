@@ -9,9 +9,12 @@ var board = new five.Board({
 });
 
 board.on('ready', function() {
-  // Create an LED for pin 0
-  var led = new five.Led(0);
+  var compass = new microbitio.Compass();
 
-  // Blink every half second
-  led.blink(500);
+  compass.on('change', function() {
+    console.log('change');
+    console.log('  heading : ', Math.floor(this.heading));
+    console.log('  bearing : ', this.bearing.name);
+    console.log('--------------------------------------');
+  });
 });

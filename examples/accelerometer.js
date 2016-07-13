@@ -9,9 +9,11 @@ var board = new five.Board({
 });
 
 board.on('ready', function() {
-  // Create an LED for pin 0
-  var led = new five.Led(0);
+  var accelerometer = new microbitio.Accelerometer();
 
-  // Blink every half second
-  led.blink(500);
+  accelerometer.on('change', function() {
+    console.log('X: %d', this.x);
+    console.log('Y: %d', this.y);
+    console.log('Z: %d', this.z);
+  });
 });

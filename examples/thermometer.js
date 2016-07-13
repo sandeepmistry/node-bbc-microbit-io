@@ -9,9 +9,9 @@ var board = new five.Board({
 });
 
 board.on('ready', function() {
-  // Create an LED for pin 0
-  var led = new five.Led(0);
+var thermometer = new microbitio.Thermometer();
 
-  // Blink every half second
-  led.blink(500);
+  thermometer.on('change', function(data) {
+    console.log('Temperature is ' + data.celsius + '°C');
+  });
 });
