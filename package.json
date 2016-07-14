@@ -1,6 +1,6 @@
 {
   "name": "bbc-microbit-io",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Johnny-Five IO Plugin for the BBC micro:bit",
   "main": "index.js",
   "scripts": {
